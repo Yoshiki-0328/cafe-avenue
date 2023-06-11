@@ -1,0 +1,184 @@
+html {
+  font-family: "Noto Serif JP", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+}
+body {
+  line-height: 1;
+  font-size: 100%;
+  color: #333;
+  width: 100%;
+}
+/* -------------
+header----------
+------------- */
+header{
+    background-color: yellowgreen;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+}
+.logo h1{
+    font-size: 2rem;
+}
+.nav{
+    display: flex;
+}
+.nav li a {
+    display: block;
+    padding: 10px;
+}
+/* -------------
+main-----------
+------------- */
+main{
+    background-color: yellow;
+}
+.wrapper{
+    padding: 100px 0px;
+}
+.title{
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.title h3{
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    display: inline;
+}
+.title h3::before,
+.title h3::after {
+    content: '';
+    height: 2px ;
+    width: 100px;
+    background-color: #333;
+    position: absolute;
+    top: 60%;
+    right: -130px;
+}
+.title h3::before{
+    width: 100px;
+    left: -130px;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.content .desc{
+    width: 50%;
+    text-align: center;
+    line-height: 2.5;
+}
+.content a{
+    display: inline-block;
+    padding: 50px 20px 0px 20px;
+    line-height: 1.5;
+    border-bottom: 1px solid #333;
+}
+a:hover{
+    opacity: .7;
+}
+.content img{
+    width: 50%;
+    object-fit: cover;
+}
+/* -------------
+mainvisual------
+------------- */
+#mainvisual p{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    z-index: 20;
+    text-shadow: 2px 2px 2px #555;
+    line-height: 1.5;
+}
+#mainvisual p:last-child{
+    font-size: 1.25rem;
+    bottom: 10%;
+}
+
+/* -------------
+concept---------
+------------- */
+#concept{
+    background-color: wheat;
+}
+/* -------------
+Menu----------
+------------- */
+#menu{
+    background-color: violet;
+}
+#menu .content{
+    flex-direction: row-reverse;
+}
+/* -------------
+access----------
+------------- */
+#access{
+    background-color: turquoise;
+}
+/* -------------
+contact----------
+------------- */
+
+/* -------------
+footer----------
+------------- */
+footer{
+    background-color: #999;
+    padding: 3% 7%;
+}
+.footer-inner{
+    display: flex;
+    align-items: start;
+    font-size: .8rem;
+    margin-bottom: 50px;
+}
+footer div:nth-of-type(2) {
+    width: 60%;
+}
+footer div:nth-of-type(3) {
+    width: 25%;
+}
+footer .logo{
+    width: 15%;
+}
+footer dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer dt {
+    width: 20%;
+    margin: 15px 0px;
+}
+footer dd {
+    width: 80%;
+    margin: 15px 0px;
+}
+footer ul{
+    margin-bottom: 20px;
+}
+footer li{
+    margin: 20px 0px;
+}
+footer img{
+    width: 10%;
+}
