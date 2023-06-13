@@ -1,20 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avenue Café | Concept</title>
-</head>
-<body>
-    <iframe src="./index.html" frameborder="0"></iframe>
-    <p>
-        「アヴェニューカフェ」は都会の喧騒を忘れさせ、訪れる人々に心地よい休息と癒しを提供する場所です。店内は自然光が差し込む明るい空間であり、緑豊かな植物やナチュラルな素材を使用したインテリアが特徴です。
+  <head>
+    <title>concept</title>
+  </head>
+  <body id="p-concept">
+    <header id="header"></header>
 
-メニューはオーガニックで新鮮な食材を使用し、ヘルシーかつ美味しい料理やドリンクを提供します。特に季節ごとのフレッシュなフルーツや野菜を活かしたメニューが豊富です。
+    <!-- main -->
+    <main>
+      <!-- mainvisual -->
+      <div id="mainvisual">
+        <ul class="slider">
+          <li class="slider-item slider-item01"></li>
+        </ul>
+        <div class="title">
+          <h3>Concept</h3>
+        </div>
+        <p>
+          都会の喧騒を忘れ、心地よい癒しの場を提供する都市のオアシス。
+          <br />リラックスできるクリエイティブスペース、定期的なアート展示や<br />
+          イベントで文化と交流を育む場所。
+        </p>
+        <p></p>
+      </div>
+      <!-- message -->
+      <div id="message">
+        <p>
+          Avenue Café
+          は都会の喧騒を忘れさせ、訪れる人々に心地よい休息と癒しを提供する場所です。<br />
+          店内は自然光が差し込む明るい空間であり、緑豊かな植物やナチュラルな素材を使用したインテリアが特徴です。<br />
+          メニューはオーガニックで新鮮な食材を使用し、ヘルシーかつ美味しい料理やドリンクを提供します。<br />
+          また、Avenue Café
+          ではゆったりとした雰囲気の中で本を読んだり、友人との会話を楽しんだり、
+          クリエイティブな作業をしたりすることができるスペースも提供します。<br />
+          忙しい都会の中でほっと一息つける、リラックスできる場所として、
+          訪れる人々に心地よい時間と体験を提供します。
+        </p>
+      </div>
+      <!-- unique -->
+      <div id="unique">
+        <h4>Our Unique</h4>
+        <ul>
+          <li>
+            <div class="desc">
+              <p>アーティスティックな癒しの場</p>
+              <p>
+                都会の喧騒から離れて心地よい癒しの場を提供します。
+                アートやデザインにインスパイアされた内装やインテリアが特徴であり、
+                ゲストは創造的な雰囲気に包まれながらくつろげる空間を体験できます。
+              </p>
+            </div>
+            <img src="./img/cafe1.jpg" alt="unique" />
+          </li>
+          <li>
+            <div class="desc">
+              <p>健康と持続可能性へのこだわり</p>
+              <p>
+                オーガニックや地元の新鮮な食材を活用した健康的で美味しい
+                メニューを提供します。食事やドリンクに使用する材料の選択には持続可能性と環境への配慮が
+                重視され、地球と身体に優しい選択がされています。
+              </p>
+            </div>
+            <img src="./img/cafe2.jpg" alt="unique" />
+          </li>
+          <li>
+            <div class="desc">
+              <p>文化と交流の場</p>
+              <p>
+                定期的なアート展示やパフォーマンス、ワークショップなどのイベントを通じて、
+                地元のアーティストやクリエイター、そしてコミュニティメンバー同士が交流し、
+                刺激を受け合うことができます。
+              </p>
+            </div>
+            <img src="./img/cafe3.jpg" alt="unique" />
+          </li>
+          <li>
+            <div class="desc">
+              <p>クリエイティブな学びと成長の場</p>
+              <p>
+                ワークショップやセミナー、ディスカッションイベントなどを開催し、
+                ゲストに新たなスキルや知識を提供します。アーティストや専門家からの指導や助言を通じて、
+                個々の才能や創造性の向上を促し、自己表現やアイデアの実現に対するサポートを行います。
+              </p>
+            </div>
+            <img src="./img/cafe4.jpg" alt="unique" />
+          </li>
+        </ul>
+      </div>
+    </main>
 
-また、アヴェニューカフェではゆったりとした雰囲気の中で本を読んだり、友人との会話を楽しんだり、クリエイティブな作業をしたりすることができるスペースも提供します。定期的にアート展示やワークショップ、音楽ライブなどのイベントも開催され、さまざまな文化と交流が生まれる場所となります。
+    <footer id="footer"></footer>
 
-「アヴェニューカフェ」は、忙しい都会の中でほっと一息つける、リラックスできる場所として、訪れる人々に心地よい時間と体験を提供します。
-    </p>
-</body>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--自作のJS-->
+    <script src="./js/main.js"></script>
+    <script src="./js/ifram.js"></script>
+  </body>
 </html>

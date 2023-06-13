@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Document</title>
+  </head>
+  <body id="p-contact">
+    <header></header>
+
+    <main>
+      <!-- mainvisual -->
+      <div id="mainvisual">
+        <div class="title">
+          <h3>Contact</h3>
+        </div>
+    </div>
+
+        <div class="form-wrapper">
+            <p>
+                Avenue Café へのご質問などの各種お問い合わせはこちらからお願い致します。
+                 内容によりましては、ご返信までにお時間が掛かる場合や、ご返信できかねる場合がございます。 
+                 誠に申し訳ございませんが、あらかじめご了承いただきますようお願いいたします。
+            </p>
+            <form action="#">
+                <dl>
+                    <dt>お名前</dt>
+                    <dd>
+                        <input type="text">
+                        <input type="text">
+                    </dd>
+                    <dt>フリガナ</dt>
+                    <dd>
+                        <input type="text">
+                        <input type="text">
+                    </dd>
+                    <dt>性別</dt>
+                    <dd>
+                        <input type="radio" name="male" id="male" checked>男性
+                        <input type="radio" name="female" id="female">女性
+                    </dd>
+                    <dt>メールアドレス</dt>
+                    <dd>
+                        <input type="email" name="email" id="email">
+                    </dd>
+                    <dt>ご質問・ご要望等</dt>
+                    <dd>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </dd>
+                </dl>
+                <button type="submit">送信する</button>
+                <button >リセット</button>
+            </form>
+        <p></p>
+      </div>
+    </main>
+
+
+    <footer></footer>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--自作のJS-->
+    <script src="./js/main.js"></script>
+    <script src="./js/ifram.js"></script>
+  </body>
+</html>

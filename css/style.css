@@ -23,7 +23,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+.logo a{
     display: flex;
     align-items: center;
 }
@@ -56,7 +56,6 @@ main{
 }
 .title h3{
     font-size: 2rem;
-    font-weight: bold;
     position: relative;
     display: inline;
 }
@@ -181,4 +180,219 @@ footer li{
 }
 footer img{
     width: 10%;
+}
+
+/* concept----------------------------------------- */
+/* -------------
+mainvisual------
+------------- */
+#p-concept .title,
+#p-menu .title,
+#p-access .title{
+    position: absolute;
+    top:20%;
+    left: 0%;
+    z-index: 20;
+    color: white;
+    text-shadow: 2px 2px 2px #555;
+}
+
+#p-concept .title h3::before,
+#p-concept .title h3::after,
+#p-menu .title h3::before,
+#p-menu .title h3::after,
+#p-access .title h3::before,
+#p-access .title h3::after{
+    background-color: white;
+    box-shadow: 2px 2px 2px #555;
+}
+#message{
+    padding: 2% 10%;
+    line-height: 3;
+}
+/* -------------
+unique--------
+------------- */
+#unique,
+#ourmenu,
+#address{
+    padding: 5% ;
+}
+#unique h4,
+#ourmenu h4,
+#address h4{
+    font-size: 2rem;
+}
+#unique li{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#unique li:nth-of-type(2),
+#unique li:nth-of-type(4){
+    flex-direction: row-reverse;
+}
+#unique li .desc{
+    width: 40%;
+    padding: 10px;
+}
+#unique li p{
+    font-size: .8rem;
+    line-height: 2;
+}
+#unique li p:first-child{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+#unique li img{
+    width: 55%;
+}
+/* Menu----------------------------------------------------------- */
+#tabmenu{
+    padding: 10% 0;
+}
+/*tabの形状*/
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+    border-bottom: .2px solid #c0c0c0 ;
+}
+.tab li a{
+	display: block;
+	margin:0 2px;
+	padding:10px 20px;
+    color: #999;
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+    opacity: 1;
+    color: #333;
+}
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+	padding:50px 20px;
+}
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.dishes h3{
+    margin-bottom: 100px;
+}
+.dishes ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dishes li{
+    width: 50%;
+    padding: 0px 50px 150px 50px;
+}
+.dishes li:last-child{
+    padding-bottom: 0;
+}
+.dishes img{
+    width: 70%;
+    display: block;
+    margin: 0 auto 50px;
+    height: 200px;
+    object-fit: cover;
+}
+.dishes .caption {
+    display: flex;
+    justify-content: space-between;
+}
+.dishes .menu-desc h5{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+.dishes .menu-desc p{
+    font-size: .8rem;
+    line-height: 1.5;
+}
+/* drink----------- */
+.drinks-inner{
+    display: flex;
+}
+#drink .drink-inner{
+    width: 50%;
+}
+#drink h5{
+    font-size: 1.2rem;
+}
+#drink ul{
+    padding: 50px 20px;
+}
+#drink li {
+    line-height: 4;
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+}
+#drink li p:first-child{
+    width: 70%;
+}
+#drink li p:last-child{
+    width: 30%;
+}
+/* Access----------------------------------------- */
+#map{
+    padding: 10% 0 5%;
+    text-align: center;
+}
+#map iframe{
+    width: 80%;
+    filter: grayscale(90%);
+}
+#map ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+    text-align: left;
+    justify-content: space-between;
+}
+#map li{
+    width: 50%;
+    padding: 20px 20px 50px 20px;
+}
+#map li p:first-child{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#map li p:last-child{
+    font-size: .9rem;
+    line-height: 2;
+    padding-left: 10px;
+}
+/* contact----------------------------------------- */
+#p-contact main{
+margin-top: 100px;
+}
+#p-contact .title{
+    color: #333;
+    text-shadow: 2px 2px 2px #999;
+}
+#p-contact .title h3::before,
+#p-contact .title h3::after{
+    background-color: #333;
+    box-shadow: 2px 2px 2px #999;
+}
+.form-wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+#p-contact input,textarea{
+    border: 1px solid #999;
 }
